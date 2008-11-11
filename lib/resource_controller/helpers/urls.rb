@@ -61,7 +61,11 @@ module ResourceController
         end
       end
 
-      # added by felipe to satisfy their own needs
+      # added custom methods by felipe to satisfy their own needs
+
+      def graph_object_path(alternate_object = nil) 
+        smart_path *object_url_options(:graph, alternate_object) 
+      end
 
       def months_object_path(alternate_object = nil) 
         smart_path *object_url_options(:months, alternate_object) 
@@ -70,6 +74,7 @@ module ResourceController
       def days_object_path(alternate_object = nil) 
         smart_path *object_url_options(:days, alternate_object) 
       end
+
       def show_stats_object_path(alternate_object = nil) 
         smart_path *object_url_options(:show_stats, alternate_object) 
       end  
