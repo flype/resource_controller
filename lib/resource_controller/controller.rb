@@ -19,7 +19,10 @@ module ResourceController
                              :edit_object_path, :new_object_path, :collection_path, :hash_for_collection_path, :hash_for_object_path, 
                                 :hash_for_edit_object_path, :hash_for_new_object_path, :hash_for_collection_url, 
                                   :hash_for_object_url, :hash_for_edit_object_url, :hash_for_new_object_url, :parent?,
-                                    :collection_url_options, :object_url_options, :new_object_url_options
+                                    :collection_url_options, :object_url_options, :new_object_url_options, :days_object_path, 
+                                    :months_object_path, :show_stats_object_path
+                                    
+                                    #3 last methods added by flype to satisfy their own needs
                                 
       end
       
